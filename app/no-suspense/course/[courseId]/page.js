@@ -1,5 +1,5 @@
-import { DBConnect } from '../../mongo'
-import Course from '../../Course'
+import { DBConnect } from '@/app/mongo'
+import Course from '@/app/Course'
 import Image from 'next/image'
 
 const getCourseDetails = async (courseId) => {
@@ -32,4 +32,5 @@ const page = async ({
     );
 };
 
+// export const dynamic = "force-dynamic";
 export default page;
