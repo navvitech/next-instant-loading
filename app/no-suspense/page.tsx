@@ -1,5 +1,6 @@
 import { DBConnect } from '../mongo'
 import Course from '../Course'
+import Link from 'next/link';
 
 const getF = async () => {
   const data = await (await fetch('https://ip-7es0.onrender.com/delay')).json()
@@ -19,9 +20,8 @@ async function getCourses() {
 
 export default async function Home() {
   const data = await getCourses()
-  console.log(data)
   return <main>{data?.map(item => (
-    <>{item.title}</>
+    <Link href={`/course/${item._id}`}>{item.title}</Link>
   ))}</main>;
 }
 
