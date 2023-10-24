@@ -21,7 +21,7 @@ async function getCourses() {
 export default async function Home() {
   const data = await getCourses()
   return <main>{data?.map(item => (
-    <Link key={item._id} href={`/no-suspense/course/${item._id}`}>{item.title}</Link>
+    <Link key={item._id} href={`/no-suspense/${item._id}`}>{item.title}</Link>
   ))}</main>;
 }
 
