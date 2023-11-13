@@ -1,5 +1,5 @@
-import { DBConnect } from '../mongo'
-import Course from '../Course'
+import { DBConnect } from '../../mongo'
+import Course from '../../Course'
 import Link from 'next/link';
 
 const getF = async () => {
