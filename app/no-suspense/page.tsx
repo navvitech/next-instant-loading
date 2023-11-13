@@ -25,5 +25,5 @@ export default async function Home() {
   ))}</main>;
 }
 
-export const dynamic = "force-dynamic"; // on each request appi call will be made.
+// export const dynamic = "force-dynamic"; // on each request appi call will be made.
 //  if it is not there api call will be made only on hard refresh
